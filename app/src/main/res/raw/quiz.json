@@ -1,33 +1,28 @@
-[
-  {
-    "questions": ["What is your favorite color?",
-      "What is your favorite breakfast?",
-      "Do you hate Deccan?",
-      "Which is your favorite subject?",
-      "Do you have any pets?",
-      "Do you have any of the following brands?",
-      "Who is your favorite basketball player?"
-    ],
-    "values": [
-      [[1, 2, -2, -5], [1, -2, 2, 0], [2, -2, 0, 5], [0, 0, 0, 0], [4, 2, 2, 0], [2, 0, -4, 0]],
-      [[1, 0, 5, 5], [-2, -2, 3, -10], [-2, 2, 0, 1], [1, 3, 3, 3]],
-      [[-2, 2, 0, 0], [4, 0, 2, 0]],
-      [[0, -2, 1, -4], [1, 0, 2, -2], [-2, -2, 5, 0], [0, 0, 0, 6]],
-      [[2, 3, 2, 0], [0, 0, 0, 1]],
-      [[0, 4, 1, 2], [2, 1, 4, -1], [2, 2, 2, 2], [2, 6, -4, 2], [0, -4, 0, -2]],
-      [[0, 3, 2, -2], [5, 1, 3, -2], [0, 0, 0, 0], [0,0,0,0], [0,0,0,0]]
-    ],
-    "choices": [
-      ["Black","Blue","Green","Yellow","White","Red"],
-      ["Scrambled eggs","Salad","Cereal","Meat"],
-      ["Yes", "No"],
-      ["Math", "English", "Computer science", "Language (like spanish or others)"],
-      ["Yes", "No"],
-      ["Supreme", "H&M", "Hollister", "Rick Owens", "I don’t have any of these"],
-      ["Larry Bird", "Lebron James", "Steph Curry or Micheal Jordan", "Lamelo Ball or Ja Morant", "Spencer Dinwiddie"]
-    ]
-  },
-  {
-
-  }
-]
+{
+  "questions": ["What is your favorite color?",
+    "What is your favorite breakfast?",
+    "Do you hate Deccan?",
+    "Which is your favorite subject?",
+    "Do you have any pets?",
+    "Do you have any of the following brands?",
+    "Who is your favorite basketball player?"
+  ],
+  "values": [
+    [[1, 2, -2, -5], [1, -2, 2, 0], [2, -2, 0, 5], [0, 0, 0, 0], [4, 2, 2, 0], [2, 0, -4, 0]],
+    [[1, 0, 5, 5], [-2, -2, 3, -10], [-2, 2, 0, 1], [1, 3, 3, 3]],
+    [[-2, 2, 0, 0], [4, 0, 2, 0]],
+    [[0, -2, 1, -4], [1, 0, 2, -2], [-2, -2, 5, 0], [0, 0, 0, 6]],
+    [[2, 3, 2, 0], [0, 0, 0, 1]],
+    [[0, 4, 1, 2], [2, 1, 4, -1], [2, 2, 2, 2], [2, 6, -4, 2], [0, -4, 0, -2]],
+    [[0, 3, 2, -2], [5, 1, 3, -2], [0, 0, 0, 0], [0,0,0,0], [0,0,0,0]]
+  ],
+  "choices": [
+    ["Black","Blue","Green","Yellow","White","Red"],
+    ["Scrambled eggs","Salad","Cereal","Meat"],
+    ["Yes", "No"],
+    ["Math", "English", "Computer science", "Language (like spanish or others)"],
+    ["Yes", "No"],
+    ["Supreme", "H&M", "Hollister", "Rick Owens", "I don’t have any of these"],
+    ["Larry Bird", "Lebron James", "Steph Curry or Micheal Jordan", "Lamelo Ball or Ja Morant", "Spencer Dinwiddie"]
+  ]
+}
