@@ -69,12 +69,12 @@ class LearningJson : AppCompatActivity() {
             }
         }
 
-        for (i in 0..(samples5.size-1)){
-            val currentSample5 = samples.get(i)
-            if (sample.startingChannel == 3){
-
-            }
-        }
+//        for (i in 0..(samples5.size-1)){
+//            val currentSample5 = samples.get(i)
+//            if (sample.startingChannel == 3){
+//
+//            }
+//        }
 
 
 

@@ -1,8 +1,10 @@
 package com.example.quizapp
 
+import com.google.gson.annotations.SerializedName
+
 data class QuizTest(
-    val questions : Array<String>,
-    val values : Array<Value>,
-    val choices : Array<Choice>
+    @SerializedName("questions") val questions : List<String>,
+    @SerializedName("values") val values : List<Value>,
+    @SerializedName("choices") val choices : List<Choice>
 )
 
