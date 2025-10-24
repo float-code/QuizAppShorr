@@ -1,6 +1,7 @@
 package com.example.quizapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                 if (i >= amountOfButtons){
                     break
                 }
-                val currentChoice = quizChoices.get(quizClass.currentQuestion).choice.get(i)
+                val currentChoice = quizChoices.get(quizClass.currentQuestion).get(i)
                 allButtons.get(i).setText(currentChoice)
                 allButtons.get(i).visibility = View.VISIBLE
             }
@@ -82,12 +83,16 @@ class MainActivity : AppCompatActivity() {
         fun goToNextQuestion(){
             if (quizClass.getCurrentQuestion() == "End"){
                 //display sscore and end
-                questionTextView.setText("End")
+                var score : String = quizClass.calculateScore()
+                questionTextView.setText(score)
+                Log.d("MAINACTIVITY", "questionTextView set to score")
+            }else{
+                quizClass.advanceQuestion()
+                resetButtonsVisibility()
+                loadQuestion()
+                loadButtons()
             }
-            quizClass.advanceQuestion()
-            resetButtonsVisibility()
-            loadQuestion()
-            loadButtons()
+
         }
 
         buttonA.setOnClickListener {
