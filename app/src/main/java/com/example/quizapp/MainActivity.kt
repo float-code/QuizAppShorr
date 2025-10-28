@@ -112,12 +112,16 @@ class MainActivity : AppCompatActivity() {
             goToNextQuestion()
         }
         buttonE.setOnClickListener {
-            quizClass.updateScore(4)
-            goToNextQuestion()
+            if (quizClass.getAmountOfButtonsToLoad() >= 5){
+                quizClass.updateScore(4)
+                goToNextQuestion()
+            }
         }
         buttonF.setOnClickListener {
-            quizClass.updateScore(5)
-            goToNextQuestion()
+            if (quizClass.getAmountOfButtonsToLoad() >= 6){
+                quizClass.updateScore(5)
+                goToNextQuestion()
+            }
         }
 
         loadQuestion()

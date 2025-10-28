@@ -33,11 +33,13 @@ class Quiz (var questions : List<String>, var choices : List<List<String>>, var 
 
     fun updateScore(choiceIndex : Int){
         if (currentQuestion < questions.size){
-            val currentChoice = quizChoices.get(currentQuestion)
-            bludIndex.set(0, bludIndex.get(choiceIndex).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(0))
-            bludIndex.set(1, bludIndex.get(choiceIndex).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(1))
-            bludIndex.set(2, bludIndex.get(choiceIndex).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(2))
-            bludIndex.set(3, bludIndex.get(choiceIndex).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(3))
+//            val currentChoice = quizChoices.get(currentQuestion)
+            Log.d("QUIZ", "${quizValues.get(currentQuestion)}, c : ${choiceIndex}")
+
+            bludIndex.set(0, bludIndex.get(0).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(0))
+            bludIndex.set(1, bludIndex.get(1).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(1))
+            bludIndex.set(2, bludIndex.get(2).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(2))
+            bludIndex.set(3, bludIndex.get(3).toInt() + quizValues.get(currentQuestion).get(choiceIndex).get(3))
         }
     }
 
